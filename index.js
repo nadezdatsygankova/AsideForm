@@ -15,22 +15,7 @@ consentForm.addEventListener('submit', function(e){
     e.preventDefault()
 
     const consentFormData = new FormData(consentForm)
-    console.log(consentFormData)
-
-/*
-Challenge:
-1. Create a const to store the user's name and
-   use a FormData method to extract the
-   submitted name from the FormData object.
-2. Insert the user's name into the HTML string
-   that contains the final message we show our
-   users.
-*/
-
-const userName = consentFormData.get('fullName');
-
-
-
+    const userName = consentFormData.get('fullName');
 
     modalText.innerHTML = `
     <div class="modal-inner-loading">
